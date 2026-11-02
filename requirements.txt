@@ -1,0 +1,5 @@
+# No Python dependencies — cut.py only uses the standard library.
+# The one real requirement is ffmpeg (with ffprobe) on your PATH:
+#   Debian/Ubuntu: sudo apt install ffmpeg
+#   macOS:         brew install ffmpeg
+#   Windows:       winget install ffmpeg  (or grab a build from ffmpeg.org)
