@@ -2,20 +2,28 @@
 
 # highlight-cutter
 
-I keep downloading two-hour videos, watching twenty minutes, and never
-coming back. So I wrote this: it finds the most intense parts of a long
-video and cuts them into a short highlight reel first. If the highlights
-are good, I'll make time for the full thing.
+## What this is, in plain English
 
-It reads one of two signals:
+A lot of adult videos run for one or two hours, but the really intense
+parts are usually just a few short stretches. This tool finds those
+stretches and cuts them out — and, if you ask it to, stitches them into
+one highlights version. No more dragging the progress bar back and
+forth and fast-forwarding through an hour of build-up.
 
-- **A funscript** sitting next to the video (same name, `.funscript`).
-  It scores every 10-second window by how much action is packed into it —
-  how many actions there are and how far they move.
-- **The audio track.** No script? It measures volume instead and picks
-  the loudest stretches. Plenty of videos give themselves away this way.
+It finds the high points in one of two ways:
 
-Everything runs locally. No uploads, no accounts, no API keys.
+- **From the video's funscript, if it has one.** A funscript is a
+  small companion file that works like an instruction sheet for a
+  remote-controlled electric masturbator: it tells the toy exactly
+  when to move and how strongly while the video plays. This tool reads
+  that instruction sheet and picks the places where the movements are
+  packed in tightest and hit hardest.
+- **From the sound, if there is no funscript.** It listens through
+  the whole audio track and picks the loudest stretches. In a lot of
+  videos, the loudest parts are also the most intense parts.
+
+Everything happens on your own computer. The videos are not uploaded
+anywhere, and there are no accounts or API keys involved.
 
 ## Install
 
